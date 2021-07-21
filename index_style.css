@@ -1,0 +1,256 @@
+/*
+    Sebastian T. Narciso
+    ID #183439
+	June 28, 2021
+
+	I have not discussed the CSS code in my program with anyone
+	other than my instructor or the teaching assistants assigned
+	to this course.
+
+	I have not used CSS code obtained from another student, or any
+	other unauthorized source, either modified or unmodified.
+
+	If any CSS code or documentation used in my program was obtained
+	from another source, such as a textbook or website, that has been
+	clearly noted with a proper citation in the comments of my program.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 65% 35%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+  margin: 30px 20px 20px 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+nav{
+  padding: 0px 0px 0px 60px;
+}
+
+nav li a{
+  color: #373737;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  padding-right: 70px;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:70%;
+}
+
+nav > img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1FR 4FR 2FR 1FR;
+  grid-template-rows: 339px;
+  padding: 0px 0px 80px 0px;
+}
+
+header > #header-content > h1{
+  font-size: 28px;
+}
+
+header > #header-content > p{
+  font-size: 20px;
+}
+
+#header-content{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 230px 50px 50px 50px;
+  background-color:#F8F8F8;
+}
+
+header > #bg-pic{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 131px 0px 0px 0px;
+  margin:0px 65.5px 0px 0px;
+  background-color:#F8F8F8;
+}
+
+h2{
+  font-size: 26px;
+}
+
+h3{
+  font-size: 24px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+  font-size: 16px;
+}
+
+main{
+  font-family: 'EB Garamond', serif;
+  display:grid;
+  grid-template-rows: 1FR 1FR 1FR 1FR;
+  grid-row-gap:80px;
+}
+
+#profile{
+  display: grid;
+  grid-template-columns: 400px 1FR;
+  grid-template-rows: 1FR;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #F8F8F8;
+  padding: 80px 0px 80px 100px;
+}
+
+#profile > img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px 50px 0px 30px;
+}
+
+#profile-details{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  padding: 0px 200px 0px 0px;
+  line-height: 36px;
+}
+
+#education{
+  display: grid;
+  grid-template-columns: .5FR 4FR 2FR .5FR;
+  grid-template-rows: 339px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#education-details{
+  background-color: #F8F8F8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 100px 0px 450px 100px;
+  margin: 0px 0px 100px 0px;
+  line-height: 36px;
+}
+
+#education > img{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0px 40px 0px 0px;
+  padding: 218px 0px 0px 40px;
+  background-color: #F8F8F8;
+}
+
+#work{
+  display: grid;
+  grid-template-columns: 300px 1FR;
+  grid-template-rows: 150px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #F8F8F8;
+  padding: 50px;
+  margin: 60px 0px 0px 0px;
+}
+#work > img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px 50px 0px 130px;
+}
+
+#work-details{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  padding: 10px 150px 0px 30px;
+  line-height: 36px;
+}
+
+#hobbies{
+  display: grid;
+  grid-template-columns: .5FR 4FR 2FR .5FR;
+  grid-template-rows: 339px;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#hobbies > #hobby-details{
+  background-color: #F8F8F8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  line-height: 36px;
+  padding: 80px 0px 400px 90px;
+}
+
+#hobbies > img{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #F8F8F8;
+  margin: 0px 40px 0px 0px;
+  padding: 205px 60px 20px 110px;
+}
+
+footer p {
+  display: grid;
+  grid-template-columns: 1FR;
+  grid-template-rows: 1FR;
+  font-size: 1em;
+  text-align: center;
+  margin: 150px 0 0 0;
+  padding:50px;
+  background-image:url("images_index/footer.png");
+}
+
+header {
+  text-align: left;
+}
+
+nav li{
+  list-style: none;
+  margin:  10px 0 0 0;
+}

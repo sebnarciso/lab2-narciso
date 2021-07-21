@@ -1,0 +1,214 @@
+/*
+    Sebastian T. Narciso
+    ID #183439
+  July 5, 2021
+
+	I have not discussed the CSS code in my program with anyone
+	other than my instructor or the teaching assistants assigned
+	to this course.
+
+	I have not used CSS code obtained from another student, or any
+	other unauthorized source, either modified or unmodified.
+
+	If any CSS code or documentation used in my program was obtained
+	from another source, such as a textbook or website, that has been
+	clearly noted with a proper citation in the comments of my program.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 65% 35%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+  margin: 30px 20px 20px 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+nav{
+  padding: 0px 0px 0px 60px;
+}
+
+nav li a{
+  color: #373737;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  padding-right: 70px;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:70%;
+}
+
+nav > img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1FR 4FR 2FR 1FR;
+  grid-template-rows: 339px;
+  padding: 0px 0px 80px 0px;
+}
+
+header > #header-content > h1{
+  font-size: 28px;
+}
+
+header > #header-content > p{
+  font-size: 20px;
+}
+
+#header-content{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 230px 50px 50px 50px;
+  background-color:#F8F8F8;
+}
+
+header > #bg-pic{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 18px 0px 0px 0px;
+  margin:0px 65.5px 0px 0px;
+  background-color:#F8F8F8;
+}
+
+footer p {
+  display: grid;
+  grid-template-columns: 1FR;
+  grid-template-rows: 1FR;
+  font-size: 1em;
+  text-align: center;
+  margin: 140px 0 0 0;
+  padding:50px;
+  background-image:url("images_index/footer.png");
+}
+
+header {
+  text-align: left;
+}
+
+nav li{
+  list-style: none;
+  margin:  10px 0 0 0;
+}
+
+h2{
+  font-size: 24px;
+}
+
+p{
+  font-size: 16px;
+}
+
+main{
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  display:grid;
+  grid-template-rows: 380px 1FR 1FR;
+  grid-row-gap:80px;
+}
+
+#tokyo{
+  display: grid;
+  grid-template-columns: 400px 1FR;
+  grid-template-rows: 1FR;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #F8F8F8;
+}
+
+#tokyo > img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 0px 50px 0px 30px;
+}
+
+#tokyo-details{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 60px 200px 40px 0px;
+  margin: 30px 0px 10px 0px;
+  line-height: 32px;
+}
+
+#gion{
+  display: grid;
+  grid-template-columns: .5FR 4FR 2FR .5FR;
+  grid-template-rows: 1FR;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#gion-details{
+  padding: 80px 65px 0px 140px;
+  background-color: #F8F8F8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  line-height: 32px
+}
+
+#gion > img{
+  padding: 40px 10px 30px 0px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #F8F8F8;
+}
+
+#navigating{
+  display: grid;
+  grid-template-columns: 300px 1FR;
+  grid-template-rows: 150px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #F8F8F8;
+}
+
+#navigating > img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 50px 50px 0px 130px;
+}
+
+#navigating-details{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  padding: 80px 250px 0px 100px;
+  line-height: 32px;
+}
